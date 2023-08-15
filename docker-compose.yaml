@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    container_name: postgres
+    image: postgres:latest
+    environment: 
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    networks:
+      - nwsqlapp
+    volumes:
+      - ./scripts/init.sh:/docker-entrypoint-initdb.d/init.sh
+      - ./scripts/:/scripts/
+
+networks:
+  nwsqlapp:
+    driver: bridge
