@@ -1,4 +1,4 @@
-set search_path to solutions;
+SET SEARCH_PATH TO exercise_102;
 
 SELECT * FROM expected_output
 EXCEPT ALL

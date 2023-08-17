@@ -1,5 +1,4 @@
-set search_path to solutions;
-
+SET SEARCH_PATH TO exercise_102;
 DROP TABLE IF EXISTS solution_output;
 
 WITH host_team_points AS (
