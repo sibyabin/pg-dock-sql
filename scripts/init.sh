@@ -29,7 +29,7 @@ EOSQL
 for ex in $active_exercises
 do 
   echo $ex
-  psql -v --username dbuser --dbname practise -f /scripts/exercise-$ex/1-setup.sql
+  psql -v --username dbuser --dbname practise -f /scripts/exercise-$ex/code/setup.sql
 done
 
 echo "INFO:Init Script Completed"
