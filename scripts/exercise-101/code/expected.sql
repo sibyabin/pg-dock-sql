@@ -1,1 +1,1 @@
-SELECT 1 as value;
+SELECT 3 as sum_value;

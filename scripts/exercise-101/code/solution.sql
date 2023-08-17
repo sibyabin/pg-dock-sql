@@ -1,0 +1,1 @@
+SELECT sum(value) as sum_value FROM dummy;
