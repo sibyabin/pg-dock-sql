@@ -30,11 +30,12 @@ Refine your SQL skills using **pg-dock-sql**—a PostgreSQL Docker environment f
     export POSTGRES_PASSWORD=<password>
     ```
 #### Launch the environment
-- Run the command `sh launch-environment.sh `
+- Run the command `sh launch-environment.sh`
+    ![launch environment](/assets/launch-environment.png)
 
 #### Verify Installation
 - Run `docker ps` command to check if the container started without issues
-    ![](/assets/verify-setup1.png)
+    ![docker ps](/assets/verify-setup1.png)
 - Run below commands against the container to check whether the all the exercise schemas and tables are created 
     ```
     docker exec -it postgres psql -v --username dbuser --dbname practise -c "\dn"
@@ -44,7 +45,8 @@ Refine your SQL skills using **pg-dock-sql**—a PostgreSQL Docker environment f
 ### How to extend?
 
 #### Create artifacts required
-- Under scripts folder , create a folder structures in the format `exercise-<some_number>`.For e.g., `example-111`
+Under scripts folder , create a folder structures in the format `exercise-<some_number>`.
+For e.g., `example-111`
 ```
     ├── exercise-111
     │   ├── code
@@ -56,14 +58,23 @@ Refine your SQL skills using **pg-dock-sql**—a PostgreSQL Docker environment f
     │       └── test1.sql
 ```
 
-- **README.md**: This can be used to document the details of the problem. Test data to be used etc.
-- **setup.sql**: This SQL can be used to create the required tables and then seed the test data.
-- **expected.sql**: This SQL contains the expected output
-- **solution.sql**: This SQL contains the solution to the problem implemented.
+- **_README_**: This can be used to document the details of the problem. Test data to be used etc.
+- **_setup.sql_**: This SQL can be used to create the required tables and then seed the test data.
+- **_expected.sql_**: This SQL contains the expected output
+- **_solution.sql_**: This SQL contains the solution to the problem implemented.
 
 
 #### Validating your solution
-- Please execute the following command on your system to validate the solution. This script will establish a connection with the PostgreSQL Docker container, execute your provided solution, and display both the expected and actual outputs.
-    ``` sh check-solution.sh <some_number> ```
-    ![validate solution](/assets/checking-solution.png)
+Execute the command `sh check-solution.sh <some_number>` on your system to validate the solution. This script will establish a connection with the PostgreSQL Docker container, execute your provided solution, and display both the expected and actual outputs. _some_number_ can be any number between 101 to 200
+
+![validate solution](/assets/checking-solution.png)
+
+
+#### Stop the environment
+Execute the command `sh stop-environment.sh` to halt the containers when you are not actively working on them.
+
+#### Cleanup the environment
+
+Execute the command  `sh cleanup-environment.sh` to cleanup the environment (containers, networks, images, volumes etc) permanently.
+
 --- 
