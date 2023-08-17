@@ -2,8 +2,7 @@
 Refine your SQL skills using **pg-dock-sql**—a PostgreSQL Docker environment for hands-on coding challenges and solutions. This helps to elevate your proficiency in SQL through handson experience.
 
 <p align="center">
-<img width="300px" hiegth="300px" src="assets/pg-dock-sql.png"> </img>
-</p>
+<img width="300px" hiegth="300px" src="assets/pg-dock-sql.png"/></p>
 
 
 ### Pre-Requisites
