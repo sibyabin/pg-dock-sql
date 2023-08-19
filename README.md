@@ -5,6 +5,18 @@ Refine your SQL skills using **pg-dock-sql**—a PostgreSQL Docker environment f
 <img width="300px" hiegth="300px" src="assets/pg-dock-sql.png"/></p>
 
 
+## Table of Contents
+
+- [Pre-Requisites](#pre-requisites)
+- [Setup](#setup)
+- [Launch the environment](#launch-the-environment)
+- [Verify Installation](#verify-installation)
+- [How to extend?](#how-to-extend)
+- [Create artifacts required](#create-artifacts-required)
+- [Validating your solution](#validating-your-solution)
+- [Stop the environment](#stop-the-environment)
+- [Cleanup the environment](#cleanup-the-environment)
+
 ### Pre-Requisites
 - **_docker_** (https://docs.docker.com/engine/install/)
 - **_docker-compose_** (Refer to https://docs.docker.com/compose/)
@@ -74,7 +86,7 @@ Execute the command `sh check-solution.sh <some_number>` on your system to valid
 ### Stop the environment
 Execute the command `sh stop-environment.sh` to halt the containers when you are not actively working on them.
 
-#### Cleanup the environment
+### Cleanup the environment
 
 Execute the command  `sh cleanup-environment.sh` to cleanup the environment (containers, networks, images, volumes etc) permanently.
 
