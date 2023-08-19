@@ -1,0 +1,1 @@
+SELECT 80.0 AS international_call_percentage;
