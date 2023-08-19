@@ -1,7 +1,7 @@
 -- SET search_path to exercise_104;
 
 SELECT 
-ROUND(SUM (CASE WHEN calls.caller_country != calls.receiver_country THEN 1 else 0 END ) * 100 / count(*),1) as international_call_percentage
+ROUND(SUM (CASE WHEN calls.caller_country != calls.receiver_country THEN 1 else 0 END) * 100 / count(*),1) as international_call_percentage
 FROM
 (
     SELECT 
