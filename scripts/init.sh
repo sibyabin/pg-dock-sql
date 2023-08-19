@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-active_exercises="101 102 103"
+active_exercises="101 102 103 104"
 echo "INFO:Init Script Started"
 
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
