@@ -4,15 +4,15 @@
 
 ## Index
 
-| SI | Description | Details |
+| Exercise | Description | Details |
 | -------- | -------- | -------- |
 | 101 | [Exercise 101](/pg-dock-sql/../scripts/exercise-101/README.md) | Sample exercise. Find `sum` of the `value` column in the `dummy` table|
 | 102 | [Exercise 102](/pg-dock-sql/../scripts/exercise-102/README.md) | Exercise 102 |
 | 103 | [Exercise 103](/pg-dock-sql/../scripts/exercise-103/README.md) | Exercise 103 |
-| 104 |||
-| 105 |||
-| 106 |||
-| 107 |||
-| 108 |||
-| 109 |||
-| 110 |||
+| 104 | <br/>[International Phone Call Analysis](/pg-dock-sql/../scripts/exercise-104/README.md)|Analyze phone call data to determine the percentage of international calls based on the country of the caller and receiver. |
+| 5 |||
+| 6 |||
+| 7 |||
+| 8 |||
+| 9 |||
+| 10 |||
